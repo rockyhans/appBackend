@@ -18,9 +18,7 @@ router.post("/files", fetchUser, async (req, res) => {
   const { name, content } = req.body;
 
   if (!name || !content) {
-    return res
-      .status(400)
-      .json({ error: "File Name and codes are required" });
+    return res.status(400).json({ error: "File Name and codes are required" });
   }
 
   try {

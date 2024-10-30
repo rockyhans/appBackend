@@ -85,7 +85,7 @@ router.post(
         return res.status(400).json({ error: "Invalid credentials" });
       }
 
-      // Create JWT token with user ID
+      // JWT token with user ID
       const data = {
         user: {
           id: user.id,
